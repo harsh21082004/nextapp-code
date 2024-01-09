@@ -14,7 +14,7 @@ export default function Home() {
   const { theme, handleOnClick } = useContext(ThemeContext)
 
   return (
-    <>
+    <div className={`${styles.maincont}`}>
       <Head>
         <title>CodeByte</title>
         <meta name="description" content="Codebyte provides you the best content you have ever seen." />
@@ -91,6 +91,6 @@ export default function Home() {
       </div>
       <Testimonials />
       <Footer />
-    </>
+    </div>
   )
 }
