@@ -32,7 +32,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const data = { name, email, password }
-        let res = await fetch(apiUri, {
+        let res = await fetch("https://nextappcodebyte.vercel.app/api/signup", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
