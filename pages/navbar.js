@@ -33,6 +33,7 @@ const Navbar = () => {
 
   return (
     <>
+    <div className={`${styles.nav}`}>
       <nav className={`navbar navbar-expand-lg px-2 ${styles.navbar} ${theme === "light" ? styles.navdark : styles.navlight}`}>
         <div className={`container-fluid`} >
           <Link href="/" className={styles.containerFluid}><span className={theme === "light" ? "textpurpledark" : "textpurplelight"}><b className='fontBold'>&lt;/&gt; Codebyte</b></span></Link>
@@ -64,10 +65,10 @@ const Navbar = () => {
               </li>
             </ul>
             <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <input className={`${styles.serBox} form-control me-2`} type="search" placeholder="Search" aria-label="Search" />
               <button className={`btn ${styles.serBtn}`} type="submit">Search</button>
             </form>
-            <Link href={"/signup"}><button className={`btn mx-2 my-2 ${styles.serBtn}`} type="submit">SignUp</button></Link>
+            <Link href={"/signup"}><button className={`btn mx-2 ${styles.serBtn}`} type="submit">SignUp</button></Link>
             <span className={`p-1`}>
               {/* <img
                 className={`${styles.imgMode} ${theme === "light"?styles.imgdark:styles.imglight}`}
@@ -124,6 +125,7 @@ const Navbar = () => {
             <Link href="/work">AI</Link>
           </div>
         </div>
+      </div>
       </div>
     </>
   )
