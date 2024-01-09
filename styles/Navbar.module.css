@@ -4,10 +4,10 @@
 
 .nav{
     position: fixed !important;
+    top: 0;
     width: 100%;
     z-index: 2;
     /* margin-bottom: 50px; */
-    top:0;
 }
 
 
@@ -57,12 +57,12 @@
     width: 140px;
   }
   
-  .serBtn {
+  .serBtn,.signBtn {
     background-color: #f11946;
     color: white;
   }
   
-  .serBtn:hover {
+  .serBtn:hover,.signBtn:hover {
     background-color: rgb(0, 0, 0);
     color: white;
   }
@@ -216,6 +216,10 @@
   transform: rotate(45deg) translate(-6.7px, -6.7px);
 }
 
+.imgMode1{
+  display: none;
+}
+
 @media screen and (max-width: 993px) {
   .hamburger {
     display: block;
@@ -223,5 +227,30 @@
 
   .navbar{
     padding: 14px;
+  }
+
+  .signBtn{
+    margin-top: 5px;
+    margin-left: 20px !important;
+  }
+
+  .serBox{
+    margin-left: 20px !important;
+  }
+
+  .navul{
+    margin-top: 3px;
+  }
+
+  .imgMode{
+    display: none;
+  }
+  
+  .imgMode1{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    display: block;
+    z-index: 1;
   }
 }
