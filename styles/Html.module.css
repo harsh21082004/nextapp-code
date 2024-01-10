@@ -4,7 +4,7 @@
 }
 
 .sidebardark,.sidebarlight{
-    margin-top: 85px;
+    margin-top: 5px;
     padding-top: 18px;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
     padding: 2px 15px 1px 16px;
 }
 .learncontdark,.learncontlight{
-    padding-top: 120px;
+    /* padding-top: 120px; */
     width: 100%;
     margin-left: 350px;
 }
