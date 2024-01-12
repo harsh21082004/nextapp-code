@@ -109,7 +109,7 @@
   }
   
   .scrollmenulight::-webkit-scrollbar,.sidebarlight::-webkit-scrollbar,.learncontlight::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 5px;               /* width of the entire scrollbar */
   }
   .scrollmenulight::-webkit-scrollbar-track,.sidebarlight::-webkit-scrollbar-track,.learncontlight::-webkit-scrollbar-track {
     background: rgb(255, 255, 255);        /* color of the tracking area */
@@ -128,7 +128,7 @@
   }
   
   .scrollmenudark::-webkit-scrollbar,.sidebardark::-webkit-scrollbar,.learncontdark::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
   }
   .scrollmenudark::-webkit-scrollbar-track,.sidebardark::-webkit-scrollbar-track,.learncontdark::-webkit-scrollbar-track {
     background: rgb(130, 130, 130);        /* color of the tracking area */
@@ -142,9 +142,11 @@
     display: inline-block;
     color: white;
     text-align: center;
+    /* text-wrap:nowrap; */
     padding: 5px 20px;
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro Topnav', sans-serif;
   }
   
   .scrollmenulight a {
@@ -153,7 +155,8 @@
     text-align: center;
     padding: 5px 20px;
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro Topnav', sans-serif;
   }
   
   .scrollmenudark a:hover {
@@ -179,7 +182,7 @@
   /* position: absolute; */
   top: 56px;
   left: 0;
-  padding: 3.4px 8px;
+  padding: 3.4px 0px;
   background-color: rgb(52, 52, 52);
 }
 
@@ -190,7 +193,7 @@
   /* position: absolute; */
   top: 56px;
   left: 0;
-  padding: 3.4px 8px;
+  padding: 3.4px 0px;
 }
 
 
@@ -220,6 +223,54 @@
   display: none;
 }
 
+
+
+.scrollleft{
+  cursor: pointer;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    font-size: 15px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px 
+}
+
+.account1{
+  display: none;
+}
+
+.account,.account1{
+  font-size: 2.5rem;
+}
+
+.account:hover,.account1:hover{
+  cursor: pointer;
+}
+
+
+.accdrop{
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  background-color: #fd839c;
+  padding: 15px;
+  border-radius: 10px; 
+}
+
+.nav_item{
+  list-style: none;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav_item:hover{
+  color: white;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 993px) {
   .hamburger {
     display: block;
@@ -245,12 +296,40 @@
   .imgMode{
     display: none;
   }
-  
+
   .imgMode1{
     position: absolute;
     top: 11px;
     right: 60px;
     display: block;
     z-index: 1;
+  }
+
+  .account1{
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    display: block;
+  }
+
+  .account{
+    display: none;
+  }
+
+  .accdrop{
+    left: 25px;
+    right: 0;
+    width: 150px;
+  }
+
+  .codebyte{
+    margin-left: 30px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .codebyte{
+    font-size: 1rem;
+    margin-left: 30px !important;
   }
 }
